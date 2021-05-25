@@ -5,7 +5,7 @@ salidas = ["salidaBoleta", "salidaNombre", "salidaGrupo", "salidaMateria", "sali
 
 forma.addEventListener("submit", formularios, false);
 function formularios(){
-  for (var i = 1, longitud = campos.length; i < longitud; i++) {
+  for (var i = 0, longitud = campos.length; i < longitud; i++) {
     var campo = forma[campos[i]];
     var salida = document.getElementById(salidas[i]);
     salida.value = campo.value;
