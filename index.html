@@ -1,75 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Selección Múltiple</title>
+    <title>Proyecto GitHub</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
     <header>
-      <h1>Selección Múltiple</h1>
+      <h1>Datos</h1>
     </header>
-    <form id="forma">
-      <p>
-        <label accesskey="B">
-          Bizcochos<br>
-          <select name="bizcochos" multiple>
-            <option value="dona">Dona</option>
-            <option value="concha" selected>Concha</option>
-            <option value="churro">Churro</option>
-            <option value="cuerno">Cuerno</option>
-            <option value="banderilla">Banderilla</option>
-            <option value="bolillo">Bolillo</option>
-          </select>
-        </label>
-        <br><output id="salidaBizcochos"></output>
-      </p>
-      <fieldset>
-        <legend>¿A quién pondrías en tu equipo? Selecciona 3.</legend>
-        <div>
-          <label>
-            <input type="checkbox" accesskey="S" name="celebridades"
-                   value="elvis">
-            Elvis Presley
-          </label>
-        <div>
-          <label>
-            <input type="checkbox" accesskey="L" name="celebridades"
-                   value="messi">
-            Lionel Messi
-          </label>
-        <div>
-          <label>
-            <input type="checkbox" accesskey="D" name="celebridades"
-                   value="brees">
-            Drew Brees
-          </label>
-        <div>
-          <label>
-            <input type="checkbox" accesskey="C" name="celebridades"
-                   value="cristiano">
-            Cristiano Ronaldo
-          </label>
-        <div>
-          <label>
-            <input type="checkbox" accesskey="R" name="celebridades"
-                   value="bigben">
-            BigBen
-          </label>
-        <div>
-          <label>
-            <input type="checkbox" accesskey="L" name="celebridades"
-                   value="luismiguel">
-            Luis Miguel
-          </label>
-        </div>
-      </fieldset>
-      <br><output id="salidaCelebridades"></output>
+    <form id="forma" action="javascript:;">
+      <p><label>Boleta<br><input name="jboleta" type="text"></label></p>
+      <p><label>Nombre<br><input name="jnombre" type="text"></label></p>
+      <p><label>Grupo<br><input name="jgrupo" type="text"></label></p>
+      <p><label>Materia<br><input name="jmateria" type="text"></label></p>
+      <p><label>Fecha<br><input name="jfecha" type="date"></label></p>
+      <input type="submit" id="formulario" value="Enviar">
+      <br>
+      <p><output id="salidaBoleta"></output></p>
+      <p><output id="salidaNombre"></output></p>
+      <p><output id="salidaGrupo"></output></p>
+      <p><output id="salidaMateria"></output></p>
+      <p><output id="salidaFecha"></output></p>
+     
    </form>
     <footer>
-       Copyright 2021 Yo
+       Copyright 2021 Castro Hernandez Alan Daniel
     </footer>
-    <script src="js/CtrlAutorizacion.js"></script>
+    <script src="js/CtrlDatos.js"></script>
   </body>
 </html>
