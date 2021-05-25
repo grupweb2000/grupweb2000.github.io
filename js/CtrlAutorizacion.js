@@ -1,8 +1,7 @@
 "use strict";
 var forma = document.getElementById("forma"),
-campos = ["nombre", "secreto", "navegador", "email", "usuario","url", "telefono", "verso"],
-salidas = ["salidaNombre", "salidaSecreto", "salidaNavegador", "salidaEmail", "salidaUsuario",
-          "salidaUrl", "salidaTelefono", "salidaVerso"];
+campos = ["jboleta", "jnombre", "jgrupo", "jmateria", "jfecha"],
+salidas = ["salidaBoleta", "salidaNombre", "salidaGrupo", "salidaMateria", "salidaFecha"];
 
 forma.addEventListener("submit", formularios, false);
 function formularios(){
